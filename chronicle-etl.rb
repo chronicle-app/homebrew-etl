@@ -5,7 +5,7 @@
 require "formula"
 require "fileutils"
 
-class ChronicleETL < Formula
+class ChronicleEtl < Formula
   module RubyBin
     def ruby_bin
       Formula["ruby"].opt_bin
