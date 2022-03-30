@@ -48,8 +48,8 @@ class ChronicleEtl < Formula
   include RubyBin
 
   url "chronicle-etl", using: RubyGemsDownloadStrategy
-  version "0.5.1"
-  sha256 "de8e2f282db05e84f18c179aaf971280638efd4c2f793efcd30f07fd11db7f4e"
+  version "0.5.2"
+  sha256 "8bba735a3bdef86ef95e4b68c630458bcd1afde2ceeab02e4eca034ff3c5d2a8"
   depends_on "ruby@3.0"
   depends_on "git"
 
