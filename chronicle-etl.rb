@@ -1,7 +1,10 @@
 
 # frozen_string_literal: true
 #
-# https://github.com/Shopify/homebrew-shopify/blob/master/chronicle-etl.rb
+# Based on:
+# https://github.com/Shopify/homebrew-shopify/blob/master/shopify-cli.rb
+# Which is based on (MIT License): 
+# https://github.com/sportngin/brew-gem/blob/master/lib/brew/gem/formula.rb.erb
 require "formula"
 require "fileutils"
 
@@ -45,9 +48,9 @@ class ChronicleEtl < Formula
   include RubyBin
 
   url "chronicle-etl", using: RubyGemsDownloadStrategy
-  version "0.3.0"
-  sha256 "f8671c75430fe39d0be1db24f86ed95420302a2391039e5ad3d9eebb466d9975"
-  depends_on "ruby@2.7"
+  version "0.5.1"
+  sha256 "de8e2f282db05e84f18c179aaf971280638efd4c2f793efcd30f07fd11db7f4e"
+  depends_on "ruby@3.0"
   depends_on "git"
 
   def install
