@@ -85,7 +85,7 @@ class ChronicleEtl < Formula
 
     ruby_libs = Dir.glob("#{prefix}/gems/*/lib")
     exe = "chronicle-etl"
-    file = Pathname.new("#{brew_gem_prefix}/bin/#{exe}")
+    file = Pathname.new("#{brew_gem_prefix}/exe/#{exe}")
     (bin + file.basename).open("w") do |f|
       f << <<~RUBY
         #!#{ruby_bin}/ruby --disable-gems
